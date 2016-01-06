@@ -8,7 +8,7 @@ h1 {
 	font-weight: 700;
 }
 h1 strong {
-	font-weight: 900;
+	font-weight: 500;
 }
 h2 {
 	font-size: 36px;
@@ -98,8 +98,9 @@ hr {
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
+	background-color: #2e1b0d; /*rgba(248, 248, 248, 0);*/
 	border-color: rgba(231, 231, 231, 0);
+	padding:0;
 }
 #menu a.navbar-brand {
 	text-transform: uppercase;
@@ -121,7 +122,7 @@ hr {
 	color: #f3ca27;
 }
 .on {
-	background-color: #032731 !important;
+	background-color: #2e1b0d !important;
 	padding: 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -140,7 +141,7 @@ hr {
 }
 /* Home Style */
 header {
-	background: url(../img/header-bg.jpg) no-repeat bottom center;
+	background: url(../img/dom/1.jpg) no-repeat bottom center;
 	background-size: cover;
 	color: #d9e0e2;
 	position: relative;
@@ -165,9 +166,10 @@ header p {
 	text-transform: uppercase;
 	color: #d9e0e2;
 	letter-spacing: 2px;
+	font-family: 'Yeseva One', sans-serif;
 }
 .color {
-	color: #f3ca27;
+	color: #f8c23e;
 }
 .btn-default {
 	color: #294d57;
@@ -179,21 +181,23 @@ header p {
 	transition: all 0.5s;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	background-color: #c1a618;
+	background-color: #f8c23e;
 }
 /* Services Section */
 #services-section {
 	padding: 80px 0 100px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#032731+0,032e3a+20,032e3a+100,032731+100 */
-	background: rgb(3,39,49); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(3,39,49,1) 0%, rgba(3,46,58,1) 20%, rgba(3,46,58,1) 100%, rgba(3,39,49,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(3,39,49,1) 0%, rgba(3,46,58,1) 20%, rgba(3,46,58,1) 100%, rgba(3,39,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(3,39,49,1) 0%, rgba(3,46,58,1) 20%, rgba(3,46,58,1) 100%, rgba(3,39,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032731', endColorstr='#032731', GradientType=0 ); /* IE6-9 */
-	color: #5b777f;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e1b0d+0,442713+20,442713+100,2e1b0d+100 */
+	background: #2e1b0d; /* Old browsers */
+	background: -moz-linear-gradient(top, #2e1b0d 0%, #442713 20%, #442713 100%, #2e1b0d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #2e1b0d 0%,#442713 20%,#442713 100%,#2e1b0d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #2e1b0d 0%,#442713 20%,#442713 100%,#2e1b0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e1b0d', endColorstr='#2e1b0d',GradientType=0 ); /* IE6-9 */
+
+	color: #bba58d;
 }
 #services-section h4 {
-	color: #81969c;
+	color: #bba58d;
 	text-transform: uppercase;
 }
 .space {
@@ -214,16 +218,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032731', end
 #services-section .service:hover>i.fa {
 	background: #0b3540;
 }
-/* Gallery Section 
+/* Gallery Section
 ==============================*/
 #works-section {
 	padding: 80px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c1a618+0,f1c40f+25,f1c40f+75,c1a618+100 */
-	background: rgb(193,166,24); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(193,166,24,1) 0%, rgba(241,196,15,1) 25%, rgba(241,196,15,1) 75%, rgba(193,166,24,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(193,166,24,1) 0%, rgba(241,196,15,1) 25%, rgba(241,196,15,1) 75%, rgba(193,166,24,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(193,166,24,1) 0%, rgba(241,196,15,1) 25%, rgba(241,196,15,1) 75%, rgba(193,166,24,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1a618', endColorstr='#c1a618', GradientType=0 ); /* IE6-9 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bba58d+0,c4b19c+20,c4b19c+100,bba58d+100 */
+	background: #bba58d; /* Old browsers */
+	background: -moz-linear-gradient(top, #bba58d 0%, #c4b19c 20%, #c4b19c 100%, #bba58d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #bba58d 0%,#c4b19c 20%,#c4b19c 100%,#bba58d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #bba58d 0%,#c4b19c 20%,#c4b19c 100%,#bba58d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bba58d', endColorstr='#bba58d',GradientType=0 ); /* IE6-9 */
+	color:#2e1b0d;
 }
 #works-section i.fa {
 	font-size: 30px;
