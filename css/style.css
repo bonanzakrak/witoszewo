@@ -141,7 +141,7 @@ hr {
 }
 /* Home Style */
 header {
-	background: url(../img/dom/header.jpg) no-repeat bottom center;
+	background: url(../img/head.jpg) no-repeat bottom center;
 	background-size: cover;
 	color: #d9e0e2;
 	position: relative;
@@ -184,7 +184,7 @@ header p {
 	background-color: #f8c23e;
 }
 /* Services Section */
-#services-section {
+#energy-section {
 	padding: 80px 0 100px 0;
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e1b0d+0,442713+20,442713+100,2e1b0d+100 */
@@ -196,14 +196,14 @@ header p {
 
 	color: #bba58d;
 }
-#services-section h4 {
+#energy-section h4 {
 	color: #bba58d;
 	text-transform: uppercase;
 }
 .space {
 	margin-top: 40px;
 }
-#services-section i.fa {
+#energy-section i.fa {
 	font-size: 40px;
 	border: 0;
 	width: 100px;
@@ -215,12 +215,12 @@ header p {
 	color: #f3ca27;
 	transition: all 0.5s;
 }
-#services-section .service:hover>i.fa {
+#energy-section .service:hover>i.fa {
 	background: #0b3540;
 }
 /* Gallery Section
 ==============================*/
-#works-section {
+#about-section {
 	padding: 80px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bba58d+0,c4b19c+20,c4b19c+100,bba58d+100 */
 	background: #bba58d; /* Old browsers */
@@ -230,7 +230,7 @@ header p {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bba58d', endColorstr='#bba58d',GradientType=0 ); /* IE6-9 */
 	color:#2e1b0d;
 }
-#works-section i.fa {
+#about-section i.fa {
 	font-size: 30px;
 	padding: 5px;
 	color: #f1c40f;
@@ -239,7 +239,7 @@ header p {
 	padding-bottom: 30px;
 	text-align: center;
 }
-#works-section hr {
+#about-section hr {
 	background: #a9971c;
 }
 ul.cat li {
@@ -261,177 +261,37 @@ ol.type li a.active {
 ol.type li a:hover {
 	background: #f7dc6f;
 }
-.isotope-item {
-	z-index: 2
+
+.portfolio-items div {
+	padding-bottom: 30px;
 }
-.isotope-hidden.isotope-item {
-	z-index: 1
+.portfolio-items td{
+	text-align: left;
+	padding-left:10px;
+	vertical-align: top
 }
-.isotope, .isotope .isotope-item {
-	/* change duration value to whatever you like */
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.isotope-item {
-	margin-right: -1px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.isotope {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	transition-property: height, width;
-}
-.isotope .isotope-item {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}
-.portfolio-item {
-	margin-bottom: 30px;
-}
-.portfolio-item .hover-bg {
-	height: 260px;
-	overflow: hidden;
-	position: relative;
-}
-.hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #bba58d;
-	background: rgba(79, 39, 13, 0.8);
-	padding: 25% 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
-.hover-bg .hover-text>h4 {
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-	font-size: 20px;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-}
-.hover-bg:hover .hover-text {
-	opacity: 1;
-}
-.portfolio-modal .modal-content {
-	padding: 100px 0;
-	min-height: 100%;
-	border: 0;
-	border-radius: 0;
-	text-align: center;
-	background-clip: border-box;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	background: #f1c40f;
-}
-.portfolio-modal .modal-content h2 {
-	margin-bottom: 15px;
-	font-size: 2.5em;
-}
-.portfolio-modal .modal-content p {
-	margin-bottom: 30px;
-}
-.portfolio-modal .modal-content p.item-intro {
-	margin: 10px 0 30px;
-	font-size: 14px;
-	font-style: italic;
-}
-.portfolio-modal .modal-content ul.list-inline {
-	margin-top: 0;
-	margin-bottom: 30px;
-}
-.portfolio-modal .modal-content img {
-	margin-bottom: 30px;
-}
-.portfolio-modal .close-modal {
-	position: absolute;
-	top: 25px;
-	right: 25px;
-	width: 75px;
-	height: 75px;
-	background-color: transparent;
-	cursor: pointer;
-}
-.portfolio-modal .close-modal:hover {
-	opacity: .3;
-}
-.portfolio-modal .close-modal .lr {
-	z-index: 1051;
-	width: 1px;
-	height: 75px;
-	margin-left: 35px;
-	background-color: #222;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-.portfolio-modal .close-modal .lr .rl {
-	z-index: 1052;
-	width: 1px;
-	height: 75px;
-	background-color: #222;
-	-webkit-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-.portfolio-modal .btn-primary {
-	color: #a7b6ba;
-	background-color: #1d434e;
-	border-color: #1d434e;
-}
-.portfolio-modal .btn-primary:hover, .portfolio-modal .btn-primary:focus, .portfolio-modal .btn-primary.focus, .portfolio-modal .btn-primary:active, .portfolio-modal .btn-primary.active {
-	color: #a7b6ba;
-	background-color: #032e3a;
-	border-color: #032e3a;
-}
+
+
+
 /* About Section */
-#about-section {
-	padding: 80px 0;
+#localization-section {
+	/*padding: 80px 0;*/
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#032731+0,032e3a+20,032e3a+100,032731+100 */
-	background: rgb(3,39,49); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(3,39,49,1) 0%, rgba(3,46,58,1) 20%, rgba(3,46,58,1) 100%, rgba(3,39,49,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(3,39,49,1) 0%, rgba(3,46,58,1) 20%, rgba(3,46,58,1) 100%, rgba(3,39,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(3,39,49,1) 0%, rgba(3,46,58,1) 20%, rgba(3,46,58,1) 100%, rgba(3,39,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032731', endColorstr='#032731', GradientType=0 ); /* IE6-9 */
+	background: #f8c23e; /* Old browsers */
+	position: relative;
+	height: 100%;
 	color: #5b777f;
 }
-#about-section h4 {
+#localization-section h4 {
 	color: #81969c;
 	font-size: 20px;
 }
-#about-section li {
+#localization-section li {
 	margin-bottom: 6px;
 	list-style: none;
 	padding: 0;
 }
-#about-section li:before {
+#localization-section li:before {
 	content: "✓";
 	color: #f3ca27;
 	padding-right: 5px;
@@ -498,26 +358,7 @@ img.img-circle.team-img {
 	background: #f1c40f;
 }
 /* Testimonials Section */
-#testimonials-section {
-	padding: 80px 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#032731+0,032e3a+20,032e3a+100,032731+100 */
-	background: url(../img/testimonials-bg.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	color: #5b777f;
-}
-#testimonial {
-	padding: 30px 0;
-}
-#testimonial .item {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-#testimonial .item p {
-	font-weight: 400;
-	margin: 0 0 30px 0;
-}
+
 /* Contact Section */
 #contact-section {
 	padding: 80px 0 20px 0;
@@ -628,9 +469,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 @media (max-width: 768px) {
-.content {
-	padding: 40% 0 0;
-}
+	.content {
+		padding: 40% 0 0;
+	}
+	body #menu a.navbar-brand{font-size: 16px;padding: 15px 0;}
+	.intro-text h1{font-size: 45px;}
 }
 
 @media (max-width: 603px) {
