@@ -92,10 +92,6 @@ function main() {
 		new WOW().init();
 		//smoothScroll
 SmoothScroll.init();
-
-
-
-
 	}());
 
 
