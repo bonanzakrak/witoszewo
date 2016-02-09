@@ -493,4 +493,4 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		padding: 0;
 	}
 }
-.pp_expand{display:none;}
+.pp_expand{display:none !important;}
