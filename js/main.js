@@ -51,7 +51,7 @@ function main() {
 		})
 
 		$(document).ready(function() {
-			$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:''});
+			$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:'',show_title:false});
 
 		});
 
