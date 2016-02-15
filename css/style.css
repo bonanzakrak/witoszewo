@@ -217,6 +217,11 @@ header p {
 	color: #bba58d;
 	text-transform: uppercase;
 }
+
+
+#energy-section hr {
+	background: #bba58d;
+}
 .space {
 	margin-top: 40px;
 }
@@ -316,7 +321,10 @@ ol.type li a:hover {
 	color: #bba58d;
 	font-size: 20px;
 }
-
+#localization-section hr {
+	background: #bba58d;
+	
+}
 /* Team Section */
 
 #gallery-section {

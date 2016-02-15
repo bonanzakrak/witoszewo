@@ -25,12 +25,31 @@ function main() {
 		======================================*/
 
 		$(window).load(function() {
+				var spans = $('.section-title span');
+
+				for (var ss in spans) {
+					if (spans.hasOwnProperty(ss)) {
+						var tekst = spans[ss].innerHTML;
+						if(tekst){
+						tekst = tekst.replace(/(\s)([\S])[\s]+/g,"$1$2&nbsp;");
+
+						spans[ss].innerHTML = tekst;
+						}
+					}
+				}
+
+
 
 				// will first fade out the loading animation
 				$("#status").fadeOut("slow");
 
 				// will fade out the whole DIV that covers the website.
 				$("#preloader").delay(500).fadeOut("slow").remove();
+
+				//Hyphenator.config({
+		         // defaultlanguage: 'pl'
+		      //});
+		      //Hyphenator.run();
 
 			})
 			/*====================================
@@ -91,7 +110,7 @@ function main() {
 
 		new WOW().init();
 		//smoothScroll
-SmoothScroll.init();
+//SmoothScroll.init();
 	}());
 
 
